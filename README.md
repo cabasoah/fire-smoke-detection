@@ -8,7 +8,7 @@ This project classifies images as **fire** or **smoke** using a TensorFlow/Keras
 - A Streamlit app for inference: `app.py`
 - Data helper scripts:
   - `augmentation.py` for data augmentation
-  - `test_split.py` for creating a test split
+  - `select_test_images.py` for selecting test images from the training set
 - A training notebook: `training.ipynb`
 
 ## Project structure
@@ -17,7 +17,7 @@ This project classifies images as **fire** or **smoke** using a TensorFlow/Keras
 .
 ├── app.py
 ├── augmentation.py
-├── test_split.py
+├── select_test_images.py
 ├── training.ipynb
 ├── requirements.txt
 ├── model/
@@ -33,7 +33,7 @@ This project classifies images as **fire** or **smoke** using a TensorFlow/Keras
 ## Prerequisites
 
 - Python 3.10+ (recommended)
-- A virtual environment (you already use `.ven`)
+- A virtual environment (you already use `.venv`)
 
 ## Setup
 
@@ -96,16 +96,6 @@ Run:
 python augmentation.py
 ```
 
-### `test_split.py`
-
-Moves a sample of images from `train/` into `test/`.
-
-Run:
-
-```bash
-python test_split.py
-```
-
 ## Training
 
 Open and run `training.ipynb` to train/evaluate and save the model.
@@ -123,4 +113,4 @@ model.save('./model/fire_smoke.keras')
 - **Import errors**
   - Re-run `pip install -r requirements.txt` inside the active virtual environment.
 - **Wrong Python environment**
-  - Verify your terminal shows the `.venv-tf` environment is activated.
+  - Verify your terminal shows the `.venv` environment is activated.

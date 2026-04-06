@@ -133,7 +133,7 @@ def process_video_file(
 def main() -> None:
     st.set_page_config(page_title="Fire/Smoke Classifier", page_icon="🔥", layout="centered")
     st.title("Fire vs Smoke Classifier")
-    st.write("Upload an image or video and run inference with your saved model.")
+    st.write("Upload an image or video and run inference.")
 
     if not MODEL_PATH.exists():
         st.error(f"Model file not found at: {MODEL_PATH}")
