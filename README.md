@@ -25,9 +25,10 @@ This project classifies images as **fire** or **smoke** using a TensorFlow/Keras
 ├── train/
 │   ├── fire/
 │   └── smoke/
-└── test/
-    ├── fire/
-    └── smoke/
+├── test/
+│   ├── fire/
+│   └── smoke/
+└── predict/
 ```
 
 ## Prerequisites
